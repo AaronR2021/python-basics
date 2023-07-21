@@ -71,3 +71,35 @@ def get_grade(score):
     else:
         grade = "F"
     return grade
+
+
+flowers_list = ["pink primrose", "hard-leaved pocket orchid", "canterbury bells", "sweet pea", "english marigold", "tiger lily", "moon orchid", "bird of paradise", "monkshood", "globe thistle"]
+
+# first 3 entires
+print("First three entries:", flowers_list[:3])
+# final 2 entries
+print("Final two entries:", flowers_list[-2:])
+
+#remove
+flowers_list.remove("globe thistle")
+print(flowers_list)
+#add
+flowers_list.append("snapdragon")
+print(flowers_list)
+
+hardcover_sales = [139, 128, 172, 139, 191, 168, 170]
+print("Minimum:", min(hardcover_sales))
+print("Maximum:", max(hardcover_sales))
+print("Total books sold in one week:", sum(hardcover_sales))
+print("Average books sold in first five days:", sum(hardcover_sales[:5])/5)
+
+flowers = "pink primrose,hard-leaved pocket orchid,canterbury bells,sweet pea,english marigold,tiger lily,moon orchid,bird of paradise,monkshood,globe thistle"
+
+print(flowers.split(","))
+alphabet = "A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.X.Y.Z"
+print(alphabet.split('.'))
+# condition each element
+test_ratings = [1, 2, 3, 4, 5]
+test_liked = [i>=4 for i in test_ratings] # [condition for i in arrayname]
+print(test_liked) #[true, true, true, false, false]
+# use sum to get the count of positives
